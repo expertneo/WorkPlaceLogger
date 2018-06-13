@@ -28,16 +28,14 @@ public class Activity {
 	private boolean checkOut;
 
 	public Activity() {
-		super();
+		this.timeStamp = LocalDate.now();
 	}
 
-	public Activity(Integer activityId, User user, LocalDate timeStamp, boolean checkIn, boolean checkOut) {
+	public Activity(boolean checkIn, boolean checkOut) {
 		super();
-		this.activityId = activityId;
-		this.user = user;
-		this.timeStamp = timeStamp;
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
+		this.timeStamp = LocalDate.now();
 	}
 
 	public Integer getActivityId() {

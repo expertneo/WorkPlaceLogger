@@ -8,7 +8,9 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = { "com.homeproject.workplacelogger.Repository.ActivityRepository",
 		"com.homeproject.workplacelogger.Service.ActivityServiceImpl",
 		"com.homeproject.workplacelogger.Repository.UserRepository",
-		"com.homeproject.workplacelogger.Service.UserServiceImpl" })
+		"com.homeproject.workplacelogger.Service.UserServiceImpl",
+		"com.homeproject.workplacelogger.Controller.RestController",
+		"com.homeproject.workplacelogger.Controller.WebController" })
 public class WorkPlaceLoggerApplication {
 
 	public static void main(String[] args) {

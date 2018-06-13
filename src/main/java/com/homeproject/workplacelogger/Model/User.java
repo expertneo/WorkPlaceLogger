@@ -29,17 +29,15 @@ public class User {
 	private LocalDate createdAt;
 
 	public User() {
-		super();
+		this.createdAt = LocalDate.now();
 	}
 
-	public User(Integer userId, List<Activity> activities, String name, String email, int age, LocalDate createdAt) {
+	public User(String name, String email, int age) {
 		super();
-		this.userId = userId;
-		this.activities = activities;
 		this.name = name;
 		this.email = email;
 		this.age = age;
-		this.createdAt = createdAt;
+		this.createdAt = LocalDate.now();
 	}
 
 	public Integer getUserId() {
@@ -88,5 +86,11 @@ public class User {
 
 	public void setCreatedAt(LocalDate createdAt) {
 		this.createdAt = createdAt;
+	}
+
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", activities=" + activities + ", name=" + name + ", email=" + email
+				+ ", age=" + age + ", createdAt=" + createdAt + "]";
 	}
 }
