@@ -12,9 +12,10 @@ import com.homeproject.workplacelogger.Repository.ActivityRepository;
 
 @Service
 public class ActivityServiceImpl implements ActivityService {
+
 	@Autowired
 	ActivityRepository activityRepository;
-	
+
 	private static final Logger LOG = Logger.getLogger(ActivityServiceImpl.class);
 
 	/*

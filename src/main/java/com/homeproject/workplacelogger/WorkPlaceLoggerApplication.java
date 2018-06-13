@@ -5,7 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.homeproject.workplacelogger")
+@ComponentScan(basePackages = { "com.homeproject.workplacelogger.Repository.ActivityRepository",
+		"com.homeproject.workplacelogger.Service.ActivityServiceImpl",
+		"com.homeproject.workplacelogger.Repository.UserRepository",
+		"com.homeproject.workplacelogger.Service.UserServiceImpl" })
 public class WorkPlaceLoggerApplication {
 
 	public static void main(String[] args) {
